@@ -1,0 +1,32 @@
+/* #region general */
+
+.contact-form {
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #669999;
+}
+
+textarea#experience {
+  width: 100%;
+}
+
+.form-row {
+  padding: 1.5em;
+  font-size: 2em;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+main {
+  margin: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-container p{
+  font-size: 2em;
+}
+
+/* #endregion general */
