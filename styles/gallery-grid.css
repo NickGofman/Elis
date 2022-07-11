@@ -1,0 +1,72 @@
+/* #region general */
+
+img {
+  border-radius: 5px 40px;
+}
+
+/* #endregion general */
+
+/* #region typography */
+
+/* #region class */
+
+/******************************* 
+ *  GRID CSS 
+ *******************************/
+.gallery {
+  display: grid;
+  width: 80%;
+  margin: 30px auto;
+  justify-items: center;
+  grid-gap: 1rem;
+  align-items: start;
+}
+
+figure.img__wrap {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.img__wrap:hover {
+  cursor: pointer;
+  opacity: 0.75;
+  transform: scale(1.1);
+}
+.img__wrap {
+  margin: 0;
+}
+/* #region DESCRIPTION */
+
+/******************************* 
+ *  DESCRIPTION 
+ *******************************/
+p.img__description {
+  position: absolute;
+  visibility: hidden;
+  color: aliceblue;
+  font-size: 3em;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+/* #endregion DESCRIPTION */
+
+/* #endregion class */
+
+/* #region MEDIA */
+
+/******************************* 
+ *  MEDIA 
+ *******************************/
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* #endregion MEDIA */
+
+/* #endregion typography */
